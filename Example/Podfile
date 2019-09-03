@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PTCardTabBar_Example' do
+  pod 'PTCardTabBar', :path => '../'
+
+  target 'PTCardTabBar_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
