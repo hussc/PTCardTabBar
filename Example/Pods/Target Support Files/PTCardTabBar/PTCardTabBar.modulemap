@@ -1,0 +1,6 @@
+framework module PTCardTabBar {
+  umbrella header "PTCardTabBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

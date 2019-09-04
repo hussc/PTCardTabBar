@@ -18,15 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  A Simple Card style tab bar with only displaying icons with small circle under the selected tab bar, try it :)
+
+
                        DESC
 
   s.homepage         = 'https://github.com/hussc/PTCardTabBar'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://imgur.com/t0BXUKL', 'https://imgur.com/HRHUEAd'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hussc' => 'hus.sc@aol.com' }
   s.source           = { :git => 'https://github.com/hussc/PTCardTabBar.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://www.facebook.com/hussc'
 
   s.ios.deployment_target = '8.0'
 
@@ -37,6 +39,6 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

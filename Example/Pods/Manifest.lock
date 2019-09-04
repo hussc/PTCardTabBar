@@ -1,0 +1,16 @@
+PODS:
+  - PTCardTabBar (0.1.0)
+
+DEPENDENCIES:
+  - PTCardTabBar (from `../`)
+
+EXTERNAL SOURCES:
+  PTCardTabBar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PTCardTabBar: fbe3b27ab72c41849a288df4bc6d07805e35c541
+
+PODFILE CHECKSUM: 17c410a6b090f53ecdacedbd8462ae6c35629332
+
+COCOAPODS: 1.7.4
