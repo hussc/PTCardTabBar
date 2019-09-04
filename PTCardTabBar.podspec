@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PTCardTabBar'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Simple UITabBarController with card-style tabbar'
 
 # This description is used to generate tags and improve search results.
