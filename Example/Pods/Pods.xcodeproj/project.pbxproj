@@ -212,20 +212,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E4A4E30C231E605F0045003E /* Extensions */ = {
+		EF6CCBDF44B6805A60F42F429AEC2977 /* PTCardTabBar */ = {
 			isa = PBXGroup;
 			children = (
 				E4A4E30D231E605F0045003E /* UIColor+Additions.swift */,
 				E4A4E30E231E605F0045003E /* UIView+AutoLayout.swift */,
 				E4A4E30F231E605F0045003E /* CGPoint+Distance.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		EF6CCBDF44B6805A60F42F429AEC2977 /* PTCardTabBar */ = {
-			isa = PBXGroup;
-			children = (
-				E4A4E30C231E605F0045003E /* Extensions */,
 				E4A4E309231E605F0045003E /* PTBarButton.swift */,
 				E4A4E30B231E605F0045003E /* PTCardTabBar.swift */,
 				E4A4E30A231E605F0045003E /* PTIndicatorView.swift */,

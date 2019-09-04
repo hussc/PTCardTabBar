@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/hussc/PTCardTabBar'
-  s.screenshots     = 'https://www.dropbox.com/s/1ra32nq4rxurqun/Simulator%20Screen%20Shot%20-%20iPhone%20Xs%20-%202019-09-04%20at%2004.43.09.png', 'https://www.dropbox.com/s/zrbah6zbxvkvn36/Simulator%20Screen%20Shot%20-%20iPhone%20Xs%20-%202019-09-04%20at%2004.43.10.png'
+#  s.screenshots     = 'https://www.dropbox.com/s/1ra32nq4rxurqun/Simulator%20Screen%20Shot%20-%20iPhone%20Xs%20-%202019-09-04%20at%2004.43.09.png', 'https://www.dropbox.com/s/zrbah6zbxvkvn36/Simulator%20Screen%20Shot%20-%20iPhone%20Xs%20-%202019-09-04%20at%2004.43.10.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hussc' => 'hus.sc@aol.com' }
   s.source           = { :git => 'https://github.com/hussc/PTCardTabBar.git', :tag => s.version.to_s }
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'PTCardTabBar/**/*'
+  s.source_files = 'PTCardTabBar/*.swift'
   
   # s.resource_bundles = {
   #   'PTCardTabBar' => ['PTCardTabBar/Assets/*.png']
