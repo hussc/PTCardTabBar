@@ -8,8 +8,9 @@
 
 ## Screenshots
 
-![](Screenshots/PTCardTabBar-1.png)
-![](Samples/PTCardTabBar-2.png)
+1             |  2
+:-------------------------:|:-------------------------:
+![](Screenshots/PTCardTabBar-1.png)  |  ![](Screenshots/PTCardTabBar-1.png)
 
 ## Example
 
