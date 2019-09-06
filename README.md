@@ -8,8 +8,8 @@
 
 ## Screenshots
 
-![](https://www.dropbox.com/s/1ra32nq4rxurqun/Simulator%20Screen%20Shot%20-%20iPhone%20Xs%20-%202019-09-04%20at%2004.43.09.png)
-![](https://www.dropbox.com/s/zrbah6zbxvkvn36/Simulator%20Screen%20Shot%20-%20iPhone%20Xs%20-%202019-09-04%20at%2004.43.10.png)
+![](Screenshots/PTCardTabBar-1.png)
+![](Samples/PTCardTabBar-2.png)
 
 ## Example
 
