@@ -10,7 +10,7 @@
 
 1             |  2
 :-------------------------:|:-------------------------:
-![](Screenshots/PTCardTabBar-1.png)  |  ![](Screenshots/PTCardTabBar-1.png)
+![](Screenshots/PTCardTabBar-1.png)  |  ![](Screenshots/PTCardTabBar-2.png)
 
 ## Example
 
