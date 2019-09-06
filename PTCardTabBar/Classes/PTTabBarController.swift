@@ -100,8 +100,8 @@ public class PTTabBarController: UITabBarController {
         customTabBar.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: horizontleSpacing).isActive = true
         customTabBar.heightAnchor.constraint(equalToConstant: tabBarHeight).isActive = true
         
-        self.view.bringSubview(toFront: customTabBar)
-        self.view.bringSubview(toFront: smallBottomView)
+        self.view.bringSubviewToFront(customTabBar)
+        self.view.bringSubviewToFront(smallBottomView)
         
         customTabBar.tintColor = tintColor
     }

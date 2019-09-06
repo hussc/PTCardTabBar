@@ -208,7 +208,7 @@ public class PTCardTabBar: UIView {
     
     override public func layoutSubviews() {
         super.layoutSubviews()
-        stackView.frame = UIEdgeInsetsInsetRect(bounds, UIEdgeInsets(top: 0, left: 0, bottom: 8, right: 0))
+        stackView.frame = bounds.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 8, right: 0))
         layer.cornerRadius = bounds.height / 2
     }
 }
