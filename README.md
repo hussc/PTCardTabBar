@@ -5,6 +5,12 @@
 [![License](https://img.shields.io/cocoapods/l/PTCardTabBar.svg?style=flat)](https://cocoapods.org/pods/PTCardTabBar)
 [![Platform](https://img.shields.io/cocoapods/p/PTCardTabBar.svg?style=flat)](https://cocoapods.org/pods/PTCardTabBar)
 
+
+## Screenshots
+
+![](https://www.dropbox.com/s/1ra32nq4rxurqun/Simulator%20Screen%20Shot%20-%20iPhone%20Xs%20-%202019-09-04%20at%2004.43.09.png)
+![](https://www.dropbox.com/s/zrbah6zbxvkvn36/Simulator%20Screen%20Shot%20-%20iPhone%20Xs%20-%202019-09-04%20at%2004.43.10.png)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
