@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class PTTabBarController: UITabBarController {
+open class PTCardTabBarController: UITabBarController {
     
     
     @IBInspectable public var tintColor: UIColor? {
@@ -37,13 +37,13 @@ public class PTTabBarController: UITabBarController {
         return anotherSmallView
     }()
     
-    override public var selectedIndex: Int {
+    override open var selectedIndex: Int {
         didSet {
             customTabBar.select(at: selectedIndex, notifyDelegate: false)
         }
     }
 
-    override public var selectedViewController: UIViewController? {
+    override open var selectedViewController: UIViewController? {
         didSet {
             customTabBar.select(at: selectedIndex, notifyDelegate: false)
         }
@@ -53,7 +53,7 @@ public class PTTabBarController: UITabBarController {
     fileprivate var tabBarHeight: CGFloat = 70
     fileprivate var horizontleSpacing: CGFloat = 20
     
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
         if #available(iOS 11.0, *) {
@@ -107,7 +107,7 @@ public class PTTabBarController: UITabBarController {
     }
 }
 
-extension PTTabBarController: CardTabBarDelegate {
+extension PTCardTabBarController: CardTabBarDelegate {
     func cardTabBar(_ sender: PTCardTabBar, didSelectItemAt index: Int) {
         self.selectedIndex = index
     }

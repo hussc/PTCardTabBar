@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0Q8-8V-UYa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xrE-sb-RxB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,26 +13,17 @@
         <!--Calendar-->
         <scene sceneID="XQu-6h-KDx">
             <objects>
-                <viewController id="bWK-We-5x1" sceneMemberID="viewController">
+                <viewController id="bWK-We-5x1" customClass="LabelViewController" customModule="PTCardTabBar_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c1M-Pc-WkF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dt-Kw-Di5">
-                                <rect key="frame" x="121" y="312.5" width="133.5" height="42"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="4Dt-Kw-Di5" firstAttribute="centerX" secondItem="c1M-Pc-WkF" secondAttribute="centerX" id="JZs-hL-Bby"/>
-                            <constraint firstItem="4Dt-Kw-Di5" firstAttribute="centerY" secondItem="c1M-Pc-WkF" secondAttribute="centerY" id="hj7-DS-PpI"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bDX-SX-dgc"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calendar" image="calendar" id="AXO-lg-OUT"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelTitle" value="Calendar"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="etm-vu-lx1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,35 +32,87 @@
         <!--Home-->
         <scene sceneID="UBh-Vw-Mbg">
             <objects>
-                <viewController id="aKt-Mx-2w8" sceneMemberID="viewController">
+                <viewController id="aKt-Mx-2w8" customClass="LabelViewController" customModule="PTCardTabBar_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4pR-As-hk0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2b-gc-72O">
-                                <rect key="frame" x="143" y="312.5" width="89.5" height="42"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="u2b-gc-72O" firstAttribute="centerY" secondItem="4pR-As-hk0" secondAttribute="centerY" id="jBz-s1-hMu"/>
-                            <constraint firstItem="u2b-gc-72O" firstAttribute="centerX" secondItem="4pR-As-hk0" secondAttribute="centerX" id="lpF-LO-kAS"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kNk-42-gkZ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="u9F-l3-hby"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelTitle" value="Home"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X7z-el-M27" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-175" y="-597"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--View Controller-->
+        <scene sceneID="rZx-wl-ELG">
+            <objects>
+                <viewController id="xrE-sb-RxB" customClass="ViewController" customModule="PTCardTabBar_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HbY-Vw-Mbf"/>
+                        <viewControllerLayoutGuide type="bottom" id="QOW-nw-ROp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6GQ-tA-b6e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="uK8-zg-LA5">
+                                <rect key="frame" x="93" y="272" width="189" height="123"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCM-Xu-7rK">
+                                        <rect key="frame" x="0.0" y="0.0" width="189" height="49"/>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.30196078430000001" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="25" minY="14" maxX="25" maxY="14"/>
+                                        <state key="normal" title="From Storyboard"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="storyboardButtonTapped:" destination="xrE-sb-RxB" eventType="touchUpInside" id="umB-y0-06K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRB-zH-zuc">
+                                        <rect key="frame" x="0.0" y="74" width="189" height="49"/>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.30196078430000001" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="25" minY="14" maxX="25" maxY="14"/>
+                                        <state key="normal" title="From Code"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="codeButtonTapped:" destination="xrE-sb-RxB" eventType="touchUpInside" id="mxh-yu-tug"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uK8-zg-LA5" firstAttribute="centerX" secondItem="6GQ-tA-b6e" secondAttribute="centerX" id="mjm-Xb-wMl"/>
+                            <constraint firstItem="uK8-zg-LA5" firstAttribute="centerY" secondItem="6GQ-tA-b6e" secondAttribute="centerY" id="z9i-xc-taq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qo8-pD-wZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2109.5999999999999" y="-157.87106446776613"/>
+        </scene>
+        <!--Card Tab Bar Controller-->
         <scene sceneID="Sdu-AN-98P">
             <objects>
-                <tabBarController id="0Q8-8V-UYa" customClass="PTTabBarController" customModule="PTCardTabBar" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="CardTabBarController" id="0Q8-8V-UYa" customClass="PTCardTabBarController" customModule="PTCardTabBar" sceneMemberID="viewController">
                     <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qto-DI-U0x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -96,26 +139,17 @@
         <!--Preferences-->
         <scene sceneID="5bn-rj-V1E">
             <objects>
-                <viewController id="PVj-51-N6f" sceneMemberID="viewController">
+                <viewController id="PVj-51-N6f" customClass="LabelViewController" customModule="PTCardTabBar_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4LH-eW-yQe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6S-65-cQ8">
-                                <rect key="frame" x="145.5" y="312.5" width="84" height="42"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="b6S-65-cQ8" firstAttribute="centerY" secondItem="4LH-eW-yQe" secondAttribute="centerY" id="2BM-sg-KIz"/>
-                            <constraint firstItem="b6S-65-cQ8" firstAttribute="centerX" secondItem="4LH-eW-yQe" secondAttribute="centerX" id="P1M-0A-9JD"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QWZ-18-5kR"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Preferences" image="preferences" id="QE6-al-LUK"/>
+                    <tabBarItem key="tabBarItem" title="Preferences" image="more" id="QE6-al-LUK"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="labelTitle" value="More"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODX-TF-uD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,7 +159,6 @@
     <resources>
         <image name="calendar" width="24" height="25"/>
         <image name="home" width="26" height="24"/>
-        <image name="preferences" width="17" height="8"/>
+        <image name="more" width="17" height="8"/>
     </resources>
-    <color key="tintColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

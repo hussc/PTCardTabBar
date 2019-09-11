@@ -12,7 +12,7 @@ protocol CardTabBarDelegate: class {
     func cardTabBar(_ sender: PTCardTabBar, didSelectItemAt index: Int)
 }
 
-public class PTCardTabBar: UIView {
+open class PTCardTabBar: UIView {
     
     weak var delegate: CardTabBarDelegate?
     
@@ -22,7 +22,7 @@ public class PTCardTabBar: UIView {
         }
     }
     
-    override public func tintColorDidChange() {
+    override open func tintColorDidChange() {
         super.tintColorDidChange()
         reloadApperance()
     }
@@ -65,7 +65,7 @@ public class PTCardTabBar: UIView {
         setup()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
@@ -146,7 +146,11 @@ public class PTCardTabBar: UIView {
         }
         
         for item in items {
-            addButton(with: item.image!)
+            if let image = item.image {
+                addButton(with: image)
+            } else {
+                addButton(with: UIImage())
+            }
         }
         
         select(at: 0)
@@ -190,7 +194,7 @@ public class PTCardTabBar: UIView {
         }
     }
     
-    override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override open func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let position = touches.first?.location(in: self) else {
             super.touchesEnded(touches, with: event)
             return
@@ -206,7 +210,7 @@ public class PTCardTabBar: UIView {
         }
     }
     
-    override public func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         stackView.frame = bounds.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 8, right: 0))
         layer.cornerRadius = bounds.height / 2

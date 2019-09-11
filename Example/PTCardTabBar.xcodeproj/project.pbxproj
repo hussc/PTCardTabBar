@@ -15,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		9BA6F796206F6E12D5EC22C8 /* Pods_PTCardTabBar_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3F79FF6A2E8390CA6D7C56 /* Pods_PTCardTabBar_Tests.framework */; };
+		CFAE33742328F94000947F2D /* PTTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE33732328F94000947F2D /* PTTabBarViewController.swift */; };
+		CFAE33762328F97400947F2D /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE33752328F97400947F2D /* LabelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		8E3F79FF6A2E8390CA6D7C56 /* Pods_PTCardTabBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PTCardTabBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF70F7EC8AE51FC12FF12B1 /* Pods-PTCardTabBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTCardTabBar_Example.debug.xcconfig"; path = "Target Support Files/Pods-PTCardTabBar_Example/Pods-PTCardTabBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BACA4A62C16392D75A37BB3B /* Pods-PTCardTabBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTCardTabBar_Tests.debug.xcconfig"; path = "Target Support Files/Pods-PTCardTabBar_Tests/Pods-PTCardTabBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CFAE33732328F94000947F2D /* PTTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTTabBarViewController.swift; sourceTree = "<group>"; };
+		CFAE33752328F97400947F2D /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 		DFB877959B89E2CEFF3FE297 /* Pods-PTCardTabBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTCardTabBar_Tests.release.xcconfig"; path = "Target Support Files/Pods-PTCardTabBar_Tests/Pods-PTCardTabBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EDAAF98C472FCC6A21B32803 /* Pods-PTCardTabBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTCardTabBar_Example.release.xcconfig"; path = "Target Support Files/Pods-PTCardTabBar_Example/Pods-PTCardTabBar_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +120,7 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				CFAE33722328F7E600947F2D /* From Code */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -157,6 +162,15 @@
 				266630BCF85E91D05F4F5CB4 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		CFAE33722328F7E600947F2D /* From Code */ = {
+			isa = PBXGroup;
+			children = (
+				CFAE33732328F94000947F2D /* PTTabBarViewController.swift */,
+				CFAE33752328F97400947F2D /* LabelViewController.swift */,
+			);
+			name = "From Code";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +347,8 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				CFAE33742328F94000947F2D /* PTTabBarViewController.swift in Sources */,
+				CFAE33762328F97400947F2D /* LabelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,13 +8,13 @@
 
 import UIKit
 
-public class PTIndicatorView: UIView {
-    override public func layoutSubviews() {
+open class PTIndicatorView: UIView {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         self.layer.cornerRadius = self.bounds.height / 2
     }
     
-    override public func tintColorDidChange() {
+    override open func tintColorDidChange() {
         super.tintColorDidChange()
         self.backgroundColor = tintColor
     }

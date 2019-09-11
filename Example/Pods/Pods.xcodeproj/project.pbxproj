@@ -21,7 +21,7 @@
 		E44CAF1A232229B4001B92CA /* PTIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44CAF11232229B3001B92CA /* PTIndicatorView.swift */; };
 		E44CAF1B232229B4001B92CA /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44CAF12232229B3001B92CA /* UIColor+Additions.swift */; };
 		E44CAF1C232229B4001B92CA /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44CAF13232229B3001B92CA /* UIView+AutoLayout.swift */; };
-		E44CAF1D232229B4001B92CA /* PTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44CAF14232229B3001B92CA /* PTTabBarController.swift */; };
+		E44CAF1D232229B4001B92CA /* PTCardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44CAF14232229B3001B92CA /* PTCardTabBarController.swift */; };
 		E44CAF1E232229B4001B92CA /* PTBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44CAF16232229B3001B92CA /* PTBarButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,12 +69,12 @@
 		C68C0E24A58805CD531CA39458EF32CF /* PTCardTabBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PTCardTabBar-umbrella.h"; sourceTree = "<group>"; };
 		DBB066379C7B0A5196DBBE4A766C13F6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DC682BD3A7A5CCF40B01D8DD2BE67C37 /* Pods-PTCardTabBar_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PTCardTabBar_Example-Info.plist"; sourceTree = "<group>"; };
-		E44CAF0E232229B3001B92CA /* CGPoint+Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGPoint+Distance.swift"; path = "PTCardTabBar/Classes/CGPoint+Distance.swift"; sourceTree = "<group>"; };
+		E44CAF0E232229B3001B92CA /* CGPoint+Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Distance.swift"; sourceTree = "<group>"; };
 		E44CAF10232229B3001B92CA /* PTCardTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PTCardTabBar.swift; path = PTCardTabBar/Classes/PTCardTabBar.swift; sourceTree = "<group>"; };
 		E44CAF11232229B3001B92CA /* PTIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PTIndicatorView.swift; path = PTCardTabBar/Classes/PTIndicatorView.swift; sourceTree = "<group>"; };
-		E44CAF12232229B3001B92CA /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Additions.swift"; path = "PTCardTabBar/Classes/UIColor+Additions.swift"; sourceTree = "<group>"; };
-		E44CAF13232229B3001B92CA /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+AutoLayout.swift"; path = "PTCardTabBar/Classes/UIView+AutoLayout.swift"; sourceTree = "<group>"; };
-		E44CAF14232229B3001B92CA /* PTTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PTTabBarController.swift; path = PTCardTabBar/Classes/PTTabBarController.swift; sourceTree = "<group>"; };
+		E44CAF12232229B3001B92CA /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		E44CAF13232229B3001B92CA /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		E44CAF14232229B3001B92CA /* PTCardTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PTCardTabBarController.swift; path = PTCardTabBar/Classes/PTCardTabBarController.swift; sourceTree = "<group>"; };
 		E44CAF16232229B3001B92CA /* PTBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PTBarButton.swift; path = PTCardTabBar/Classes/PTBarButton.swift; sourceTree = "<group>"; };
 		E78CB4FAA12756D8622EE9A93B9CE6D5 /* PTCardTabBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PTCardTabBar-dummy.m"; sourceTree = "<group>"; };
 		F98361D600B1BE67E0B9FF512652C9F1 /* Pods-PTCardTabBar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTCardTabBar_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -215,6 +215,9 @@
 		E44CAF15232229B3001B92CA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E44CAF0E232229B3001B92CA /* CGPoint+Distance.swift */,
+				E44CAF13232229B3001B92CA /* UIView+AutoLayout.swift */,
+				E44CAF12232229B3001B92CA /* UIColor+Additions.swift */,
 			);
 			name = Extensions;
 			path = PTCardTabBar/Classes/Extensions;
@@ -224,13 +227,10 @@
 			isa = PBXGroup;
 			children = (
 				E44CAF15232229B3001B92CA /* Extensions */,
-				E44CAF0E232229B3001B92CA /* CGPoint+Distance.swift */,
-				E44CAF16232229B3001B92CA /* PTBarButton.swift */,
+				E44CAF14232229B3001B92CA /* PTCardTabBarController.swift */,
 				E44CAF10232229B3001B92CA /* PTCardTabBar.swift */,
+				E44CAF16232229B3001B92CA /* PTBarButton.swift */,
 				E44CAF11232229B3001B92CA /* PTIndicatorView.swift */,
-				E44CAF14232229B3001B92CA /* PTTabBarController.swift */,
-				E44CAF12232229B3001B92CA /* UIColor+Additions.swift */,
-				E44CAF13232229B3001B92CA /* UIView+AutoLayout.swift */,
 				F97C7D0CAF161B461A8779F7D9585745 /* Pod */,
 				786795A5F00843749D45F3FE48379411 /* Support Files */,
 			);
@@ -407,7 +407,7 @@
 				E44CAF1A232229B4001B92CA /* PTIndicatorView.swift in Sources */,
 				E44CAF1E232229B4001B92CA /* PTBarButton.swift in Sources */,
 				E44CAF1C232229B4001B92CA /* UIView+AutoLayout.swift in Sources */,
-				E44CAF1D232229B4001B92CA /* PTTabBarController.swift in Sources */,
+				E44CAF1D232229B4001B92CA /* PTCardTabBarController.swift in Sources */,
 				E44CAF1B232229B4001B92CA /* UIColor+Additions.swift in Sources */,
 				267CE1D6EA1F2D398C6B1F137B11BDCA /* PTCardTabBar-dummy.m in Sources */,
 				E44CAF19232229B4001B92CA /* PTCardTabBar.swift in Sources */,
