@@ -49,6 +49,10 @@ class LabelViewController: UIViewController {
         view.addSubview(label)
         label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         label.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        if #available(iOS 11.0, *) {
+            label.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -5).isActive = true
+        }
+        label.backgroundColor = .blue
         
         view.addSubview(doneButton)
         if #available(iOS 11.0, *) {

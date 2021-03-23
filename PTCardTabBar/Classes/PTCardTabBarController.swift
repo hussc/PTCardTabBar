@@ -10,7 +10,6 @@ import UIKit
 
 open class PTCardTabBarController: UITabBarController {
     
-    
     @IBInspectable public var tintColor: UIColor? {
         didSet {
             customTabBar.tintColor = tintColor
@@ -25,11 +24,11 @@ open class PTCardTabBarController: UITabBarController {
         }
     }
     
-    lazy var customTabBar: PTCardTabBar = {
+    public let customTabBar: PTCardTabBar = {
         return PTCardTabBar()
     }()
     
-    fileprivate lazy var smallBottomView: UIView = {
+    fileprivate(set) lazy var smallBottomView: UIView = {
         let anotherSmallView = UIView()
         anotherSmallView.backgroundColor = .clear
         anotherSmallView.translatesAutoresizingMaskIntoConstraints = false
@@ -56,10 +55,8 @@ open class PTCardTabBarController: UITabBarController {
     override open func viewDidLoad() {
         super.viewDidLoad()
         
-        if #available(iOS 11.0, *) {
-            self.additionalSafeAreaInsets = UIEdgeInsets(top: 0, left: 0, bottom: tabBarHeight + bottomSpacing, right: 0)
-        }
-        
+        self.additionalSafeAreaInsets = UIEdgeInsets(top: 0, left: 0, bottom: tabBarHeight + bottomSpacing, right: 0)
+
         
         self.tabBar.isHidden = true
 
@@ -68,6 +65,19 @@ open class PTCardTabBarController: UITabBarController {
         
         customTabBar.items = tabBar.items!
         customTabBar.select(at: selectedIndex)
+    }
+    
+    public func setTabBarHidden(_ isHidden: Bool, animated: Bool){
+        let block = {
+            self.customTabBar.alpha = isHidden ? 0 : 1
+            self.additionalSafeAreaInsets = isHidden ? .zero : UIEdgeInsets(top: 0, left: 0, bottom: self.tabBarHeight + self.bottomSpacing, right: 0)
+        }
+        
+        if animated {
+            UIView.animate(withDuration: 0.25, animations: block)
+        } else {
+            block()
+        }
     }
     
     fileprivate func addAnotherSmallView(){

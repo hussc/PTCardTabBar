@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PTCardTabBar
 
 class ViewController: UIViewController {
 
@@ -22,8 +23,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func storyboardButtonTapped(_ sender: Any) {
-        let tabBarController = self.storyboard?.instantiateViewController(withIdentifier: "CardTabBarController")
-        present(tabBarController!, animated: true, completion: nil)
+        let tabBarController = self.storyboard?.instantiateViewController(withIdentifier: "CardTabBarController") as! PTCardTabBarController
+        present(tabBarController, animated: true, completion: nil)
     }
     
 
